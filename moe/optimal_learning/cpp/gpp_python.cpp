@@ -37,6 +37,7 @@
 #include "gpp_python_gaussian_process.hpp"
 #include "gpp_python_model_selection.hpp"
 #include "gpp_python_test.hpp"
+#include "gpp_my_class.hpp"
 
 namespace optimal_learning {
 
@@ -597,6 +598,8 @@ BOOST_PYTHON_MODULE(GPP) {
   ExportModelSelectionFunctions();
   ExportOptimizerParameterStructs();
   ExportRandomnessContainer();
+
+  ExportMyClassFunctions();
 }  // end BOOST_PYTHON_MODULE(GPP) definition
 
 }  // end unnamed namespace
